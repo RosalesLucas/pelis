@@ -1,20 +1,7 @@
 #!/bin/bash
 
-#PAN TRISTE
-#mega-get "https://mega.nz/file/lgkkGZIA#mBvjItUvP03E84TUSqnB_0aOgt0uZUESc_SHQUR-D_E"
-
-#GARFIELD
-#youtube-dl "https://www1399.ff-03.com/token=z_isedI3WbmtgxLdXIgjQA/1618639397/152.171.0.0/5/9/36/0c472f8aa385e486b07a65deced53369-480p.mp4"
-
-#ALADAR
-#youtube-dl "https://www1001.ff-03.com/token=6dIs-U8ieA7UDU3Spky5Og/1618639523/152.171.0.0/5/9/2b/84f157e063eb8ec0363f0ac9e97832b9-480p.mp://www1001.ff-03.com/token=6dIs-U8ieA7UDU3Spky5Og/1618639523/152.171.0.0/5/9/2b/84f157e063eb8ec0363f0ac9e97832b9-480p.mp4"
-
-#BEE MOVIE
-#youtube-dl "https://www1276.ff-03.com/token=cfBS1jiBRyuOTkbg_GhZIg/1618639617/152.171.0.0/19/6/ca/e1b76b8205bb6e9684ed6f5941bc9ca6-480p.mp4"
-
 VPLAYER="/usr/bin/omxplayer -o alsa"
 YTPLAYER="vlc"
-
 
 dialog --title "Peliculas" --msgbox "Iniciando programa" 5 25
 
@@ -31,6 +18,29 @@ while true; do
 				9 "Peppa 4"\
 				10 "Jorge el curioso 1"\
 				11 "Jorge el curioso 2"\
+				12 "Pan triste"\
+				13 "Garfield"\
+				14 "Aladar"\
+				15 "Bichos"\
+				16 "Bolt"\
+				17 "El cadaver de la novia"\
+				18 "El extraño mundo de Jack"\
+				19 "Heidi 1"\
+				20 "Heidi 2"\
+				21 "Heidi3"\
+				22 "Hercules"\
+				23 "Kuzko"\
+				24 "La dama y el vagabundo"\
+				25 "La era de hielo"\
+				26 "El libro de la selva"\
+				27 "Monsters Inc"\
+				28 "Pinocho"\
+				29 "Shrek 1"\
+				30 "Lilo y Stich"\
+				31 "Tarzan"\
+				32 "Tierra de osos"\
+				33 "Toy Story"\
+				34 "Zootopia"\
 				3>&2 2>&1 1>&3)
 		case "$option" in
 				1) clear; omxplayer -o alsa /home/pi/pelis/media/wallace.mp4 ;;
@@ -44,6 +54,29 @@ while true; do
 				9) clear; vlc "https://www.youtube.com/watch?v=HCfWg55hz3w" --fullscreen vlc://quit;;
 				10) clear; vlc "https://www.youtube.com/watch?v=MqOcTOuYH70" --fullscreen vlc://quit;;
 				11) clear; vlc "https://www.youtube.com/watch?v=Y8QdMcBsn0E" --fullscreen vlc://quit;;
+				12) clear; omxplayer -o alsa  "/home/pi/pelis/media/Corazon las alegrнas de Pantriste 2000.avi";;
+				13) clear; omxplayer -o alsa /home/pi/pelis/media/aladar.mp4;;
+				14) clear; omxplater -o alsa /home/pi/pelis/media/garfield.mp4;;
+				15) clear; omxplayer -o alsa /home/pi/pelis/media/Bichos.mp4;;
+				16) clear; omxplayer -o alsa /home/pi/pelis/media/Bolt.mp4;;
+				17) clear; omxplayer -o alsa "/home/pi/pelis/media/El cadaver de la novia.mp4";;
+				18) clear; omxplayer -o alsa "/home/pi/pelis/media/El extraño mundo de Jack.mp4";;
+				19) clear; omxplayer -o alsa /home/pi/pelis/media/heidi1.mp4;;
+				20) clear; omxplayer -o alsa /home/pi/pelis/media/heidi2.mp4;;
+				21) clear; omxplayer -o alsa /home/pi/pelis/media/heidi3.mp4;;
+				22) clear; omxplayer -o alsa /home/pi/pelis/media/Hercules.mp4;;
+				23) clear; omxplayer -o alsa /home/pi/pelis/media/Kuzko.mp4;;
+				24) clear; omxplayer -o alsa "/home/pi/pelis/media/La dama y el vagabundomp4.mp4";;
+				25) clear; omxplayer -o alsa "/home/pi/pelis/media/La era de hielo 1.mp4";;
+				26) clear; omxplayer -o alsa /home/pi/pelis/media/Mogly.mp4;;
+				27) clear; omxplayer -o alsa /home/pi/pelis/media/monsters.mp4;;
+				28) clear; omxplayer -o alsa /home/pi/pelis/media/pinocho.mp4;;
+				29) clear; omxplayer -o alsa /home/pi/pelis/media/Shrek1.mp4;;
+				30) clear; omxplayer -o alsa /home/pi/pelis/media/Stich.mp4;;
+				31) clear; omxplayer -o alsa /home/pi/pelis/media/Tarzan.mp4;;
+				32) clear; omxplayer -o alsa "/home/pi/pelis/media/Tierra de osos.mp4";;
+				33) clear; omxplayer -o alsa "/home/pi/pelis/media/Toy Story.mp4";;
+				34) clear; omxplayer -o alsa "/home/pi/pelis/media/Zootopia.mp4";;
 				*) echo "Error end of program";;
 
 		esac
