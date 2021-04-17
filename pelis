@@ -35,8 +35,10 @@ while true; do
 				11 "Jorge el curioso 2"\
 				3>&2 2>&1 1>&3)
 		case "$option" in
+				#LOCAL FILES
 				1) clear; "$VPLAYER" "media/wallace.mp4" ;;
 				2) clear; "$VPLAYER" "media/bee.mp4";;
+				#YOUTUBE LINKS
 				3) clear; "$YTPLAYER" "https://www.youtube.com/watch?v=N7e0qe04vJ8";;
 				4) clear; "$YTPLAYER" "https://www.youtube.com/watch?v=kqhZIFwTzz4";;
 				5) clear; "$YTPLAYER" "https://www.youtube.com/watch?v=EIwUzPxeYAI";;
