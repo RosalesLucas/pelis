@@ -35,15 +35,15 @@ while true; do
 		case "$option" in
 				1) clear; omxplayer -o alsa /home/pi/pelis/media/wallace.mp4 ;;
 				2) clear; omxplayer -o asla /home/pi/pelis/media/bee.mp4;;
-				3) clear; vlc "https://www.youtube.com/watch?v=N7e0qe04vJ8";;
-				4) clear; vlc "https://www.youtube.com/watch?v=kqhZIFwTzz4";;
-				5) clear; vlc "https://www.youtube.com/watch?v=EIwUzPxeYAI";;
-				6) clear; vlc "https://www.youtube.com/watch?v=D__NJye0lUs";;
-				7) clear; vlc "https://www.youtube.com/watch?v=anjQXSPTRsw";;
-				8) clear; vlc "https://www.youtube.com/watch?v=eA0Bef25y5Y";;
-				9) clear; vlc "https://www.youtube.com/watch?v=HCfWg55hz3w";;
-				10) clear; vlc "https://www.youtube.com/watch?v=MqOcTOuYH70";;
-				11) clear; vlc "https://www.youtube.com/watch?v=Y8QdMcBsn0E";;
+				3) clear; vlc "https://www.youtube.com/watch?v=N7e0qe04vJ8" --fullscreen vlc://quit;;
+				4) clear; vlc "https://www.youtube.com/watch?v=kqhZIFwTzz4" --fullscreen vlc://quit;;
+				5) clear; vlc "https://www.youtube.com/watch?v=EIwUzPxeYAI" --fullscreen vlc://quit;;
+				6) clear; vlc "https://www.youtube.com/watch?v=D__NJye0lUs" --fullscreen vlc://quit;;
+				7) clear; vlc "https://www.youtube.com/watch?v=anjQXSPTRsw" --fullscreen vlc://quit;;
+				8) clear; vlc "https://www.youtube.com/watch?v=eA0Bef25y5Y" --fullscreen vlc://quit;;
+				9) clear; vlc "https://www.youtube.com/watch?v=HCfWg55hz3w" --fullscreen vlc://quit;;
+				10) clear; vlc "https://www.youtube.com/watch?v=MqOcTOuYH70" --fullscreen vlc://quit;;
+				11) clear; vlc "https://www.youtube.com/watch?v=Y8QdMcBsn0E" --fullscreen vlc://quit;;
 				*) echo "Error end of program";;
 
 		esac
